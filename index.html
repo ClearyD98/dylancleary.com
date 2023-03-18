@@ -11,9 +11,11 @@
     <style>
       .container {
         padding-top: 150px;
+        padding-left: 50px;
+        padding-right: 50px;
       }
       .container {
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto;
       }
       body {
@@ -32,11 +34,13 @@
         animation-fill-mode: both;
       }
       .text-highlight {
-        font-size: 36px;
-        color: #6c757d;
-        font-weight: bold;
-        text-shadow: 2px 2px #f8f9fa;
+      font-size: 56px;
+      color: #6c757d;
+      font-weight: bold;
+      text-shadow: 2px 2px #f8f9fa;
+      font-family: "Arial", sans-serif;
       }
+
       
       /* Adjust logo size */
       .navbar-brand img {
@@ -59,6 +63,11 @@
 
       .nav-item {
         margin-left: 20px;
+      }
+      .spotifyPart {
+        margin-top: 300px;
+        padding-left: 50px;
+        padding-right: 50px;
       }
 
     </style>
@@ -96,9 +105,9 @@
       <p>This is a website for Dylan Cleary he built in collaboration with ChatGpt for something to do on a Friday night, I know right. Look around you will find some more information about me, even some music whilst you do, and if you keep looking a few ways to reach out if you would like to.</p>
     </div>
 
-    <div style="text-align:center;">
-      <iframe src="https://open.spotify.com/playlist/66XzIWWlTvXrI8DC2nFbbj?si=79f2b6cc637045c2" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <div class="spotifyPart" style="text-align:center;">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/66XzIWWlTvXrI8DC2nFbbj?utm_source=generator&theme=0" width="70%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
-
+      
   </body>
 </html>
