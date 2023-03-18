@@ -66,6 +66,29 @@
     background-color: #f4f4f5;
 }
 
+	 /* Adjust logo size */
+	 .navbar-brand img {
+        height: 75px; /* Change the value to your desired height */
+      }
+
+      .navbar-brand {
+        font-size: 40px;
+        padding: 15px;
+      }
+
+      .navbar-collapse {
+        margin-left: auto;
+      }
+
+      /* Move navbar items to right */
+      .navbar-nav {
+        margin-left: auto;
+      }
+
+      .nav-item {
+        margin-left: 20px;
+      }
+
 	</style>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -116,7 +139,9 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Home</a>
+        <a class="navbar-brand" href="index.html">
+          <img src="download.png" alt="Logo">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -125,9 +150,11 @@
             <li class="nav-item active">
               <a class="nav-link" href="#"></a>
             </li>
+          </ul>
+          <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="resume.html">Resume</a>
-              </li>
+              <a class="nav-link" href="resume.html">Resume</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
@@ -187,8 +214,8 @@
 				</ul>
 				</div>
 				
-				<h3 class="mb-3" data-toggle="collapse" href="#collapseExperience" role="button" aria-expanded="false" aria-controls="collapseExperience">Goals and current learnings ....e</h3>
-				<div class="collapse" id="collapseExperience">
+				<h3 class="mb-3" data-toggle="collapse" href="#collapseGoals" role="button" aria-expanded="false" aria-controls="collapseGoals">Goals and current learnings ....</h3>
+				<div class="collapse" id="collapseGoals">
 					<ul>
 						<li>tbc</li>
 					</ul>
@@ -197,7 +224,7 @@
 						<li>tbc</li>
 						
 					</ul>
-					</div>
+				</div>
                 
                 <div class="spacer"></div>  
 			</div>
