@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<style>
+		body {
+			background-color: #f4f4f5;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover; 
+		}
+		.icons {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			margin-top: 10px;
+			margin-left: 0;
+		}
+		.icon {
+			font-size: 37.5px;
+			color: #f4f4f5;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%; 
+			width: 60px;
+			height: 60px;
+			margin: 0 10px;
+			transition: all 0.3s;
+		}
+		.icon:hover {
+			transform: scale(1.2);
+            color: #fff;
+		}
+		.linkedin-icon {
+			background-color: #0077B5;
+			color: #fff;
+		}
+		.github-icon {
+			background-color: #000;
+			color: #fff;
+		}
+        .col-sm-4{
+            margin-top: 3%;
+            
+        }
+		.col-sm-8 {
+			margin-top: 10%;
+		}
+        .goals, .current-learning {
+            margin-top: 30px;
+        }
+        .spacer {
+			height: 300px; /* set the height of the empty space here */
+		}
+		.mb-3 {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f4f4f5;
+}
+
+	</style>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800);
+
+      // Collapse dropdowns
+      $('.dropdown-btn').removeClass('active');
+      $('.dropdown-container').slideUp(300);
+    }
+  });
+
+  // Collapsible dropdowns
+  $('.dropdown-btn').click(function() {
+    $(this).toggleClass('active');
+    var dropdownContainer = $(this).next('.dropdown-container');
+    dropdownContainer.slideToggle(300);
+    $('.dropdown-container').not(dropdownContainer).slideUp(300);
+    $('.dropdown-btn').not($(this)).removeClass('active');
+  });
+});
+
+	</script>
+	
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="home.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+	<div class="container">
+		<div
+ class="row">
+ <div class="col-sm-4">
+    <h2>Dylan Cleary</h2>
+    <p>Email: <a href="mailto:info@dylancleary.com">info@dylancleary.com</a></p>
+
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/dylan-cleary-a510b7105/" target="_blank" class="icon linkedin-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ClearyD98" target="_blank" class="icon github-icon"><i class="fab fa-github"></i></a>
+    </div>
+</div>
+
+			<div class="col-sm-8">
+				<h3>Summary</h3>
+				<p>I am a dedicated and self-motivated individual with a passion for customer service and technology. With years of experience in the hospitality industry, I have honed my customer service skills to a high degree of proficiency, and successfully applied them in a more technical customer service field.</p>
+                <p>Throughout my career, I have demonstrated my ability to adapt to new challenges and environments, and have been recognized for my excellent communication skills and problem-solving abilities. I am committed to ongoing personal and professional development and am currently pursuing my interest in learning new skills through studying Portuguese.</p>
+                <p>My strong work ethic, adaptability, and enthusiasm for learning make me an ideal candidate for any customer service or technology-focused role. I am excited to continue expanding my knowledge and expertise and contribute to the success of an organization that values dedication, teamwork, and innovation.</p>
+
+				<h3 class="mb-3" data-toggle="collapse" href="#collapseEducation" role="button" aria-expanded="false" aria-controls="collapseEducation">Education</h3>
+				<div class="collapse" id="collapseEducation">
+				<p>Higher Diploma, Computing (Software Development), National College of Ireland, 2021-2022</p>
+                <p>Bachelor of Science, Computer Science and Software Engineering, Maynooth University, 2015-2019</p>
+				</div>
+
+				<h3 class="mb-3" data-toggle="collapse" href="#collapseExperience" role="button" aria-expanded="false" aria-controls="collapseExperience">Experience</h3>
+				<div class="collapse" id="collapseExperience">
+				<p>Product Support Specialist, Stripe, 2022-present</p>
+				<ul>
+					<li>As a Product Support Specialist, Priority Operations at Stripe, the role involves being a subject matter expert in one or more of Stripe’s products and using that expertise to help users resolve complex issues over email, while also rotating on a taxjar support team.</li>
+					<li>The role requires using data to identify and surface product insights and trends from user interactions, which can be used to optimize products and services on behalf of Priority users.</li>
+					<li>The Specialist also advocates for optimizing products and services for Priority users and drives initiatives and process changes to excel and scale support operations.</li>
+                    <li>Additionally, the role involves working with external partners to improve support workflow and productivity on all channels, as well as optimizing self-help channels to enable users to address their questions more effectively.</li>
+                    <li>To scale and optimize global issue resolution workflows, the Specialist also works to improve internal and external product documentation.</li>
+				</ul>
+                <p>Customer Support Representative, Name.com, 2019-2020</p>
+				<ul>
+					<li>As a customer service representative at name.com, the main responsibilities include resolving customer issues related to web hosting, domain names, billing, and compliance issues through effective communication with customers.s</li>
+					<li>Working collaboratively with other agents and leadership to address new and ever-changing issues in a fast-paced environment.</li>
+					<li>Responding to customer inquiries through inbound telephone, email, and live chat, utilizing call scripts, email templates, and extensive handbooks.</li>
+                    <li>Providing confident and knowledgeable responses to customer inquiries, managing and resolving complaints when appropriate.</li>
+                    <li>Additional responsibilities include completing training in cPanel for web hosting management, communicating with upper management on behalf of the support team, mentoring and training new hires, handling escalations from tier 1 agents, leading product development, and liaising with the fraud and compliance teams to assist customers with account issues. The work is done remotely, and the representative has helped the team adapt to this new work environment.</li>
+				</ul>
+                <p>Notable previous experience: </p>
+				<ul>
+					<li>Hospitality Supervisor, Compass Group, 2018-2019</li>
+					<li>Wine Waiter, Kellys Resort Hotel and Spa, 2017-2018</li>
+				</ul>
+				</div>
+
+                <h3>Goals and current learnings ....</h3>
+                
+                <div class="spacer"></div>  
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>
